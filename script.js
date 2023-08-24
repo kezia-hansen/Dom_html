@@ -23,4 +23,13 @@ console.log(p2.textContent);
 p2.innerHTML = "Placeholder tekst bla bla bla";
 
 const img = document.querySelector("img");
-console.log(img);
+console.log(img.src);
+img.src = "https://picsum.photos/id/17/500/500";
+console.log(img.alt);
+img.alt = "altændret";
+
+const img2 = document.querySelector("article:nth-child(2) img");
+console.log(img2.src);
+img2.src = "https://picsum.photos/id/18/500/500";
+console.log(img2.alt);
+img2.alt = "altændret";
